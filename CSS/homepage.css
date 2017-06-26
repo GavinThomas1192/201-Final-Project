@@ -1,1 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
+header {
+  width: 100%;
+  background-color: #cecece;
+}
+
+#logo {
+  display: inline-block;
+  margin: 15px;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav ul {
+  position: relative;
+  bottom: 1.8em;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 15px;
+}

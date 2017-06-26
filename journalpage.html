@@ -23,7 +23,7 @@
   <main>
     <form id="inputJournal">
       <fieldset>
-        <br><label for="whatKind">What did you do?</label>
+        <br><label for="whatKind">Activity</label>
         <input name="whatKind" type="text" placeholder="EX. Biking, Gaming, Nightout" />
 
         <br><label for="date">Today's Date</label>
@@ -36,8 +36,8 @@
         <br><label for="duration">Duration</label>
         <input name="duration" type="text" placeholder="EX. 1.5 Hours" />
 
-        <br><label for="description">Description</label>
-        <input name="description" type="text" placeholder="Any Thoughts?" />
+        <br><textarea id="desc" rows="7" for="description">Description</textarea>
+        <!-- <input name="description" type="text"/> -->
 
         <br><button type="submit">Log Journal Entry</button>
 

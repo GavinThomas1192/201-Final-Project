@@ -33,20 +33,22 @@ function handleTurnInJournal(e) {
   var date = event.target.date.value;
   var location = event.target.location.value;
   var duration = event.target.duration.value;
-  var description = event.target.description.value;
+  var description = document.getElementById('desc').value;
 
-  if (!event.target.date.value || !event.target.whatKind.value || !event.target.location.value || !event.target.duration.value || !event.target.description.value) {
+  if (!event.target.date.value || !event.target.whatKind.value || !event.target.location.value || !event.target.duration.value || !document.getElementById('desc').value) {
     return alert('Fields cannot be empty!');
   }
 
   new JournalEntry(whatKind, date, location, duration, description);
+
   console.log(allJournalEntry);
+
   localStorage.setItem(allJournalEntry[0].date, JSON.stringify(allJournalEntry));
   allJournalEntry = [];
   event.target.date.value = null;
   event.target.whatKind.value = null;
   event.target.location.value = null;
   event.target.duration.value = null;
-  event.target.description.value = null;
+  document.getElementById('desc').value = null;
 
 };

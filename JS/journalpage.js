@@ -1,5 +1,10 @@
 'use-strict';
 //******ToDo figure out how user can hit enter while journaling and not click submit
+var currentDate = new Date();
+var dateTime = (currentDate.getMonth() + 1) + '/' + currentDate.getDate() + '/' + currentDate.getFullYear() + ' @ ' + currentDate.getHours() + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds();
+var oFormObject = document.forms['inputJournal'];
+oFormObject.elements['autoDate'].value = dateTime;
+
 var getTheGoods = JSON.parse(localStorage.getItem('login'));
 
 (function() {
@@ -51,6 +56,9 @@ function handleTurnInJournal(e) {
   event.target.whatKind.value = null;
   event.target.location.value = null;
   event.target.duration.value = null;
-  
 
+};
+
+document.getElementById("submitButton").onclick = function () {
+  location.href = "displayJournal.html";
 };

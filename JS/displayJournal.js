@@ -2,12 +2,6 @@
 
 var storedJournalEntry = JSON.parse(localStorage.getItem('journalEntry'));
 
-// console.log(journalEntry);
-// for (var i = 0; i < storedJournalEntry.length; i++){
-//   localStorage.setItem(storedJournalEntry[i].date, JSON.stringify(storedJournalEntry));
-// }
-// alert('is this thing on');
-
 var section = document.getElementById('render-journal');
 
 function render() {
@@ -44,7 +38,9 @@ function remove(event) {
     if (event.target.id === storedJournalEntry[i].date) {
       var deleteDiv = document.getElementById(event.target.id);
       deleteDiv.innerHTML = '';
-      localStorage.removeItem(storedJournalEntry[i].date);
+      storedJournalEntry.splice(i, 1);
+      localStorage.setItem('journalEntry', JSON.stringify(storedJournalEntry));
+      return;
     }
   }
 };

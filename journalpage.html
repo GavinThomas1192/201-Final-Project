@@ -30,7 +30,7 @@
         <input name="whatKind" type="text" placeholder="EX. Biking, Gaming, Nightout" />
 
         <br><label for="autoDate">Today's Date</label>
-        <input name="autoDate" type="text" />
+        <input name="date" type="text" />
 
 
         <br><label for="location">Location</label>
@@ -48,6 +48,8 @@
         <!-- <input name="description" type="text"/> -->
 
         <br><button type="submit" id="submitButton">Log Journal Entry</button>
+        <br><button type="submit" id="redirectButton">Take me to my Journal Entries</button>
+
 
       </fieldset>
     </form>
@@ -56,9 +58,9 @@
   <script src="https://cdn.quilljs.com/1.2.6/quill.js"></script>
   <script src="JS/journalpage.js"></script>
   <script>
-  var quill = new Quill('#editor', {
-    theme: 'snow'
-  });
+    var quill = new Quill('#editor', {
+      theme: 'snow'
+    });
   </script>
 </body>
 

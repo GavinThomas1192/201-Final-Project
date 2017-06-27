@@ -8,6 +8,10 @@ var selectActivity = document.getElementById('dropdown');
 var submitButton = document.getElementById('submitButton');
 login.addEventListener('submit', handleLogin);
 
+submitButton.onclick = function () {
+  location.href = 'journalpage.html';
+};
+
 function User(username, password, dropdownselect) {
   this.username = username;
   this.password = password;

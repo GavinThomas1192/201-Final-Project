@@ -44,7 +44,6 @@ function handleTurnInJournal(e) {
 
 
   localStorage.setItem('journalEntry', JSON.stringify(allJournalEntry));
-  allJournalEntry = [];
   event.target.date.value = null;
   event.target.whatKind.value = null;
   event.target.location.value = null;

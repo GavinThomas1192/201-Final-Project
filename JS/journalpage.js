@@ -3,7 +3,7 @@
 var currentDate = new Date();
 var dateTime = (currentDate.getMonth() + 1) + '/' + currentDate.getDate() + '/' + currentDate.getFullYear() + ' @ ' + currentDate.getHours() + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds();
 var oFormObject = document.forms['inputJournal'];
-oFormObject.elements['autoDate'].value = dateTime;
+oFormObject.elements['date'].value = dateTime;
 
 var getTheGoods = JSON.parse(localStorage.getItem('login'));
 
@@ -18,7 +18,10 @@ var getTheGoods = JSON.parse(localStorage.getItem('login'));
   }
 })();
 
-allJournalEntry = [];
+var allJournalEntry = JSON.parse(localStorage.getItem('journalEntry'));
+if (allJournalEntry === null) {
+  allJournalEntry = [];
+}
 var journalEntryContainer = document.getElementById('inputJournal');
 
 function JournalEntry(whatKind, date, location, duration, description) {
@@ -56,9 +59,10 @@ function handleTurnInJournal(e) {
   event.target.whatKind.value = null;
   event.target.location.value = null;
   event.target.duration.value = null;
+  oFormObject.elements['date'].value = dateTime;
 
 };
 
-document.getElementById("submitButton").onclick = function () {
+document.getElementById("redirectButton").onclick = function() {
   location.href = "displayJournal.html";
 };

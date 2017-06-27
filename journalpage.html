@@ -2,9 +2,12 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="CSS/reset.css">
   <link rel="stylesheet" href="CSS/journalpage.css">
+  <link href="https://cdn.quilljs.com/1.2.6/quill.snow.css" rel="stylesheet">
   <meta charset="utf-8">
   <title></title>
+
 </head>
 
 <body>
@@ -35,8 +38,13 @@
 
         <br><label for="duration">Duration</label>
         <input name="duration" type="text" placeholder="EX. 1.5 Hours" />
-
-        <br><textarea id="desc" rows="7" for="description">Description</textarea>
+        <br>
+        <div id="editor">
+          <p>Hello World!</p>
+          <p>Some initial <strong>bold</strong> text</p>
+          <p><br></p>
+        </div>
+        <!-- <br><textarea id="desc" rows="7" for="description">Description</textarea> -->
         <!-- <input name="description" type="text"/> -->
 
         <br><button type="submit">Log Journal Entry</button>
@@ -45,7 +53,13 @@
     </form>
 
   </main>
+  <script src="https://cdn.quilljs.com/1.2.6/quill.js"></script>
   <script src="JS/journalpage.js"></script>
+  <script>
+  var quill = new Quill('#editor', {
+    theme: 'snow'
+  });
+  </script>
 </body>
 
 </html>

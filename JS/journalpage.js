@@ -33,7 +33,7 @@ function handleTurnInJournal(e) {
   var date = event.target.date.value;
   var location = event.target.location.value;
   var duration = event.target.duration.value;
-  var description = quill.root.innerHTML;
+  var description = quill.root.innerText;
 
   if (!event.target.date.value || !event.target.whatKind.value || !event.target.location.value || !event.target.duration.value) {
     return alert('Fields cannot be empty!');
@@ -48,11 +48,11 @@ function handleTurnInJournal(e) {
 
 
   localStorage.setItem('journalEntry', JSON.stringify(allJournalEntry));
-  allJournalEntry = [];
+
   event.target.date.value = null;
   event.target.whatKind.value = null;
   event.target.location.value = null;
   event.target.duration.value = null;
-  document.getElementById('desc').value = null;
+  // document.getElementById('desc').value = null;
 
 };

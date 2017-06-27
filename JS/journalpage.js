@@ -33,11 +33,15 @@ function handleTurnInJournal(e) {
   var date = event.target.date.value;
   var location = event.target.location.value;
   var duration = event.target.duration.value;
-  var description = document.getElementById('desc').value;
+  var description = quill.root.innerHTML;
 
-  if (!event.target.date.value || !event.target.whatKind.value || !event.target.location.value || !event.target.duration.value || !document.getElementById('desc').value) {
+  if (!event.target.date.value || !event.target.whatKind.value || !event.target.location.value || !event.target.duration.value) {
     return alert('Fields cannot be empty!');
   }
+
+  // if (!event.target.date.value || !event.target.whatKind.value || !event.target.location.value || !event.target.duration.value || !document.getElementById('desc').value) {
+  //   return alert('Fields cannot be empty!');
+  // }
 
   new JournalEntry(whatKind, date, location, duration, description);
 

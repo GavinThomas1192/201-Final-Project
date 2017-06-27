@@ -1,7 +1,6 @@
 'use-strict';
 
-var storedJournalEntry =
-JSON.parse(localStorage.getItem('journalEntry'));
+var storedJournalEntry = JSON.parse(localStorage.getItem('journalEntry'));
 
 // console.log(journalEntry);
 // for (var i = 0; i < storedJournalEntry.length; i++){
@@ -12,7 +11,7 @@ JSON.parse(localStorage.getItem('journalEntry'));
 var section = document.getElementById('render-journal');
 
 function render() {
-  for (var i = 0; i < storedJournalEntry.length; i++){
+  for (var i = 0; i < storedJournalEntry.length; i++) {
     var div = document.createElement('div');
     div.id = storedJournalEntry[i].date;
     var pEl = document.createElement('p');
@@ -41,7 +40,7 @@ function render() {
 
 function remove(event) {
   document.preventDefault;
-  for (var i = 0; i < storedJournalEntry.length; i++){
+  for (var i = 0; i < storedJournalEntry.length; i++) {
     if (event.target.id === storedJournalEntry[i].date) {
       var deleteDiv = document.getElementById(event.target.id);
       deleteDiv.innerHTML = '';

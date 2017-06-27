@@ -2,8 +2,8 @@
 //******ToDo figure out how user can hit enter while journaling and not click submit
 var getTheGoods = JSON.parse(localStorage.getItem('login'));
 
-(function () {
-  if(getTheGoods[0].dropdownselect === 'exercise'){
+(function() {
+  if (getTheGoods[0].dropdownselect === 'exercise') {
     document.body.style.backgroundImage = "url('http://placehold.it/1920x1080/cecece')";
     alert('bam');
   } else if (getTheGoods[0].dropdownselect === 'social') {
@@ -41,7 +41,6 @@ function handleTurnInJournal(e) {
 
   new JournalEntry(whatKind, date, location, duration, description);
 
-  console.log(allJournalEntry);
 
 
   localStorage.setItem('journalEntry', JSON.stringify(allJournalEntry));

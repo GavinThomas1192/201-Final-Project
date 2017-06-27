@@ -35,19 +35,21 @@ function handleTurnInJournal(e) {
   var duration = event.target.duration.value;
   var description = document.getElementById('desc').value;
 
-  if (!event.target.date.value || !event.target.whatKind.value || !event.target.location.value || !event.target.duration.value || !document.getElementById('desc').value) {
+  if (!event.target.date.value || !event.target.whatKind.value || !event.target.location.value || !event.target.duration.value) {
     return alert('Fields cannot be empty!');
   }
 
+  // if (!event.target.date.value || !event.target.whatKind.value || !event.target.location.value || !event.target.duration.value || !document.getElementById('desc').value) {
+  //   return alert('Fields cannot be empty!');
+  // }
+
   new JournalEntry(whatKind, date, location, duration, description);
-
-
 
   localStorage.setItem('journalEntry', JSON.stringify(allJournalEntry));
   event.target.date.value = null;
   event.target.whatKind.value = null;
   event.target.location.value = null;
   event.target.duration.value = null;
-  document.getElementById('desc').value = null;
+  // document.getElementById('desc').value = null;
 
 };

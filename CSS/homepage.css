@@ -1,13 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 
+/*
+Colors:
+#f5b42b
+*/
+
 header {
   width: 100%;
-  background-color: #cecece;
+  background-color: rgba(35, 50, 55, .6);
+}
+
+body {
+  background-image: url("../images/exercise-main.jpg");
+  background-size: cover;
 }
 
 #logo {
   display: inline-block;
   margin: 15px;
+}
+
+#top-logo {
+  font-family: 'Archivo Black', Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  color: #f5b42b;
+  line-height: .5em;
 }
 
 nav {
@@ -23,3 +40,27 @@ nav ul li {
   display: inline-block;
   margin: 15px;
 }
+
+select {
+    width: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+button {
+    background-color: #233237;
+    border: none;
+    color: #f5b42b;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;

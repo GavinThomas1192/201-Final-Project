@@ -10,7 +10,6 @@ var getTheGoods = JSON.parse(localStorage.getItem('login'));
 (function() {
   if (getTheGoods[0].dropdownselect === 'exercise') {
     document.body.style.backgroundImage = "url('images/exercise-two.jpg')";
-    alert('bam');
   } else if (getTheGoods[0].dropdownselect === 'social') {
     document.body.style.backgroundImage = "url('images/social-main.jpg')";
   } else if (getTheGoods[0].dropdownselect === 'Gaming') {

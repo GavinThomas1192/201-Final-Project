@@ -21,50 +21,48 @@
     <li>About Us</li>
   </ul>
 </nav> -->
-</header>
+  </header>
 
-<main>
-  <form id="inputJournal">
-    <fieldset>
-      <br><label class="journallabel" for="whatKind">Activity:</label>
-      <input name="whatKind" type="text" placeholder="Ex. Biking, Gaming, Nightout" />
+  <main>
+    <form id="inputJournal">
+      <fieldset>
+        <br><label class="journallabel" for="whatKind">Activity:</label>
+        <input name="whatKind" type="text" placeholder="Ex. Biking, Gaming, Nightout" />
 
-      <br><label class="journallabel" for="autoDate">Date:</label>
-      <input class="journalinput" name="date" type="text" />
+        <br><label class="journallabel" for="autoDate">Date:</label>
+        <input class="journalinput" name="date" type="text" />
 
 
-      <br><label class="journallabel" for="location">Location:</label>
-      <input name="location" type="text" placeholder="Ex. Home, 2nd Avenue, YMCA" />
+        <br><label class="journallabel" for="location">Location:</label>
+        <input name="location" type="text" placeholder="Ex. Home, 2nd Avenue, YMCA" />
 
-      <br><label class="journallabel" for="duration">Duration:</label>
-      <input name="duration" type="text" placeholder="Ex. 1.5 Hours" />
-      <br>
-      <div id="editor">
-        <p>Hello World!</p>
-        <p>Some initial <strong>bold</strong> text</p>
-        <p><br></p>
+        <br><label class="journallabel" for="duration">Duration:</label>
+        <input name="duration" type="text" placeholder="Ex. 1.5 Hours" />
+        <br>
+        <div id="editor">
+          <p>Hello World!</p>
+          <p>Some initial <strong>bold</strong> text</p>
+          <p><br></p>
+        </div>
+
+        <br><a href="displayJournal.html"><button type="submit" id="redirectButton" >Log Journal Entry</button></a>
+
+
+      </fieldset>
+      <div class="buttonclass">
+
+        <!-- <button type="submit" id="redirectButton">Go to Journal Entries</button> -->
+
       </div>
-
-
-      <!-- <br><button type="submit" id="submitButton">Log Journal Entry</button> -->
-
-
-    </fieldset>
-  </form>
-  <div class="buttonclass">
-    <button type="submit" id="submitButton">Log Journal Entry</button>
-
-    <button type="submit" id="redirectButton">Go to Journal Entries</button>
-
-  </div>
-</main>
-<script src="https://cdn.quilljs.com/1.2.6/quill.js"></script>
-<script src="JS/journalpage.js"></script>
-<script>
-  var quill = new Quill('#editor', {
-    theme: 'snow'
-  });
-</script>
+    </form>
+  </main>
+  <script src="https://cdn.quilljs.com/1.2.6/quill.js"></script>
+  <script src="JS/journalpage.js"></script>
+  <script>
+    var quill = new Quill('#editor', {
+      theme: 'snow'
+    });
+  </script>
 </body>
 
 </html>

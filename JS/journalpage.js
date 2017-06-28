@@ -36,6 +36,7 @@ journalEntryContainer.addEventListener('submit', handleTurnInJournal);
 
 function handleTurnInJournal(e) {
   event.preventDefault();
+  console.log('got click');
   var whatKind = event.target.whatKind.value;
   var date = event.target.date.value;
   var location = event.target.location.value;

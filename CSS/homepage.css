@@ -13,18 +13,32 @@ header {
 body {
   background-image: url("../images/exercise-main.jpg");
   background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  background: rgba(35, 50, 55, .6);
 }
 
 #logo {
   display: inline-block;
   margin: 15px;
+  width: 100px;
+
 }
 
 #top-logo {
   font-family: 'Archivo Black', Helvetica, Arial, sans-serif;
   font-size: 3em;
+  padding: 0px 17px 0px 17px;
   color: #f5b42b;
-  line-height: .5em;
+  border-radius: 50%;
+  border: 10px solid #f5b42b;
+  /*line-height: .5em;*/
+
 }
 
 nav {
@@ -41,10 +55,30 @@ nav ul li {
   margin: 15px;
 }
 
+#welcome {
+  margin-top: 6.250em;
+  /*background: rgba(35, 50, 55, .6);*/
+  font-family: 'Archivo Black', sans-serif;
+  color: #f5b42b;
+  text-align: center;
+}
+
+.welcome1 {
+  font-size: 12em;
+  position: relative;
+}
+
+#subwelcome {
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  margin: 0em 0em 0em 10.625em;
+}
+
 select {
     width: 150px;
-    padding: 12px 20px;
-    margin: 8px 0;
+    /*padding: 12px 20px;
+    margin: 8px 0;*/
+    border: 0px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -64,3 +98,17 @@ button {
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
+  }
+
+    #login {
+      text-align: center;
+      margin-top: 3.1em;
+    }
+
+    #password {
+      padding: 0px 0px 0px 30px;
+    }
+
+    #dropdown {
+      margin-left: 30px;
+    }

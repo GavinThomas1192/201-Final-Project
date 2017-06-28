@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
+/*
+Colors:
+#f5b42b
+*/
+
+header {
+  width: 100%;
+  background-color: rgba(35, 50, 55, .6);
+}
+
+body {
+  background-image: url("../images/journal.jpg");
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  /*background: rgba(35, 50, 55, .6);*/
+}
+
+#logo {
+  display: inline-block;
+  margin: 30px;
+  width: 100px;
+
+}
+
+#logo a {
+  text-decoration: none;
+}
+
+#logo a:visited {
+  text-decoration: none;
+}
+
+#top-logo {
+  font-family: 'Archivo Black', Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  padding: 0px 17px 0px 17px;
+  color: #f5b42b;
+  border-radius: 50%;
+  border: 10px solid #f5b42b;
+  /*line-height: .5em;*/
+
+}
+
+nav {
+  display: inline-block;
+}
+
+nav ul {
+  position: relative;
+  bottom: 1.8em;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 15px;
+}
+
+#welcome {
+  margin-top: 6.250em;
+  color: #f7f1f1;
+  /*background: rgba(35, 50, 55, .6);*/
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+.welcome1 {
+  font-size: 12em;
+  position: relative;
+}
+
+#subwelcome {
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  margin: 0em 0em 0em 10.625em;
+}
+
+select {
+    width: 150px;
+    /*padding: 12px 20px;
+    margin: 8px 0;*/
+    border: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+button {
+    background-color: #f5b42b;
+    font-size: 18px;
+    border: none;
+    color: #233237;
+    padding: 10px 40px;
+    text-decoration: none;
+    margin: 4px 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+button:hover {
+  background-color: #233237;
+  color: #f5b42b;
+}
+
+    #login {
+      text-align: center;
+      margin-top: 3.1em;
+    }
+
+    #password {
+      padding: 0px 0px 0px 30px;
+    }
+
+    #dropdown {
+      margin-left: 30px;
+    }
+
+section > div {
+  padding: 30px;
+
+}
+
+section > div > p {
+  padding: 15px;
+  text-align: left;
+}
+
+.titles {
+  color: #f5b42b;
+  font-weight: bold;
+  padding-right: 5px;
+  font-size: 18px;
+  font-family: 'Archivo Black', Helvetica, Arial, sans-serif;
+}
+
+#activity {
+  font-weight: 600;
+  color: #f5b42b;
+  font-size: 48px;
+  padding: 10px;
+  font-family: 'Archivo Black', Helvetica, Arial, sans-serif;
+
+}
+
+.the-divs {
+  margin-bottom: 40px;
+  background-color: rgba(35, 50, 55, .6);
+  border: 1px solid #f5b42b;
+}
+
+button a {
+  text-decoration: none;
+}
+
+button a:visited {
+  color: inherit;
+  text-decoration: none;
+  decoration: none;
+}

@@ -92,12 +92,23 @@ input[type=text] {
 }
 
 button {
-    background-color: #233237;
+    background-color: #f5b42b;
+    font-size: 18px;
     border: none;
-    color: #f5b42b;
-    padding: 16px 32px;
+    color: #233237;
+    padding: 10px 40px;
     text-decoration: none;
     margin: 4px 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+button:hover {
+    background-color: #233237;
+
+    color: #f5b42b;
+
+
   }
 
     #login {

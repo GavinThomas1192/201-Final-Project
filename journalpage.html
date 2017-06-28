@@ -6,63 +6,65 @@
   <link rel="stylesheet" href="CSS/journalpage.css">
   <link href="https://cdn.quilljs.com/1.2.6/quill.snow.css" rel="stylesheet">
   <meta charset="utf-8">
-  <title></title>
+  <title>verve.</title>
 
 </head>
 
 <body>
   <header>
     <div id="logo">
-      <img src="" />
+      <span id="top-logo">V</span>
     </div>
-    <nav id="nav">
-      <ul>
-        <li><a href="homepage.html">Home</a></li>
-        <li><a href="aboutMe.html">About Us</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- <nav id="nav">
+    <ul>
+    <li>Home</li>
+    <li>About Us</li>
+  </ul>
+</nav> -->
+</header>
 
-  <main>
-    <form id="inputJournal">
-      <fieldset>
-        <br><label for="whatKind">Activity</label>
-        <input name="whatKind" type="text" placeholder="EX. Biking, Gaming, Nightout" />
+<main>
+  <form id="inputJournal">
+    <fieldset>
+      <br><label class="journallabel" for="whatKind">Activity:</label>
+      <input name="whatKind" type="text" placeholder="Ex. Biking, Gaming, Nightout" />
 
-        <br><label for="autoDate">Today's Date</label>
-        <input name="date" type="text" />
-
-
-        <br><label for="location">Location</label>
-        <input name="location" type="text" placeholder="EX. Home, 2nd Avenue, YMCA" />
-
-        <br><label for="duration">Duration</label>
-        <input name="duration" type="text" placeholder="EX. 1.5 Hours" />
-        <br>
-        <div id="editor">
-          <p>Hello World!</p>
-          <p>Some initial <strong>bold</strong> text</p>
-          <p><br></p>
-        </div>
+      <br><label class="journallabel" for="autoDate">Date:</label>
+      <input class="journalinput" name="date" type="text" />
 
 
-        <br><button type="submit" id="submitButton">Log Journal Entry</button>
+      <br><label class="journallabel" for="location">Location:</label>
+      <input name="location" type="text" placeholder="Ex. Home, 2nd Avenue, YMCA" />
+
+      <br><label class="journallabel" for="duration">Duration:</label>
+      <input name="duration" type="text" placeholder="Ex. 1.5 Hours" />
+      <br>
+      <div id="editor">
+        <p>Hello World!</p>
+        <p>Some initial <strong>bold</strong> text</p>
+        <p><br></p>
+      </div>
 
 
-      </fieldset>
-    </form>
-
-    <br><button type="submit" id="redirectButton">Take me to my Journal Entries</button>
+      <!-- <br><button type="submit" id="submitButton">Log Journal Entry</button> -->
 
 
-  </main>
-  <script src="https://cdn.quilljs.com/1.2.6/quill.js"></script>
-  <script src="JS/journalpage.js"></script>
-  <script>
-    var quill = new Quill('#editor', {
-      theme: 'snow'
-    });
-  </script>
+    </fieldset>
+  </form>
+  <div class="buttonclass">
+    <button type="submit" id="submitButton">Log Journal Entry</button>
+
+    <button type="submit" id="redirectButton">Go to Journal Entries</button>
+
+  </div>
+</main>
+<script src="https://cdn.quilljs.com/1.2.6/quill.js"></script>
+<script src="JS/journalpage.js"></script>
+<script>
+  var quill = new Quill('#editor', {
+    theme: 'snow'
+  });
+</script>
 </body>
 
 </html>

@@ -9,12 +9,12 @@ var getTheGoods = JSON.parse(localStorage.getItem('login'));
 
 (function() {
   if (getTheGoods[0].dropdownselect === 'exercise') {
-    document.body.style.backgroundImage = "url('http://placehold.it/1920x1080/cecece')";
+    document.body.style.backgroundImage = "url('images/exercise-two.jpg')";
     alert('bam');
   } else if (getTheGoods[0].dropdownselect === 'social') {
-    document.body.style.backgroundImage = "url('http://placehold.it/1920x1080/00FF00')";
+    document.body.style.backgroundImage = "url('images/social-main.jpg')";
   } else if (getTheGoods[0].dropdownselect === 'Gaming') {
-    document.body.style.backgroundImage = "url('http://placehold.it/1920x1080/FF0000')";
+    document.body.style.backgroundImage = "url('images/gaming-main.jpg')";
   }
 })();
 

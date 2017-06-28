@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
+/*
+Colors:
+#f5b42b
+*/
+* {
+}
+
+fieldset{
+}
+
+header {
+  width: 100%;
+  background-color: rgba(35, 50, 55, .6);
+}
+
+body {
+  background-image: url("../images/social-two.jpg");
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  background: rgba(35, 50, 55, .6);
+  margin-top: 70px;
+  padding-top: 30px;
+  outline: 1px solid orange;
+
+}
+
+#logo {
+  display: inline-block;
+  margin: 30px;
+  width: 100px;
+
+}
+
+#top-logo {
+  font-family: 'Archivo Black', Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  padding: 0px 17px 0px 17px;
+  color: #f5b42b;
+  border-radius: 50%;
+  border: 10px solid #f5b42b;
+  /*line-height: .5em;*/
+
+}
+
+nav {
+  display: inline-block;
+}
+
+nav ul {
+  position: relative;
+  bottom: 1.8em;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 15px;
+}
+
+select {
+  width: 150px;
+  /*padding: 12px 20px;
+  margin: 8px 0;*/
+  border: 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input[type=text] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+button {
+  background-color: #f5b42b;
+  font-size: 18px;
+  border: none;
+  color: #233237;
+  padding: 10px 40px;
+  text-decoration: none;
+  /*margin: 4px 2px;*/
+  /*margin-top: 30px;
+  margin-bottom: 30px;*/
+  margin: 30px 15px 30px 15px;
+}
+
+#redirectButton {
+  margin-right: 100px;
+}
+
+.buttonclass {
+  display: inline-block;
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+  left: 23%;
+  /*margin-left: 5%;*/
+}
+
+button:hover {
+  background-color: #233237;
+  color: #f5b42b;
+}
+
+#editor {
+  text-align: center;
+  background: white;
+  width: 600px;
+  margin-left: 200px;
+  height: 250px;
+}
+
+.ql-toolbar {
+  margin-top: 15px;
+  background: rgba(255, 255, 255, .6);
+  text-align: center;
+  width: 600px;
+  margin-left: 200px;
+}
+
+#inputJournal {
+  /*width: 50%;*/
+  text-align: left;
+}
+
+.journallabel {
+  color: #f5b42b;
+  font-size: 25px;
+  width: 150px;
+  display: inline-block;
+  font-family: 'Archivo Black', Helvetica, Arial, sans-serif;
+  margin: 15px 0px 15px 200px;
+
+}
+
+/*.journalinput {
+  width: 200px;
+  /*background: black;*/
+}*/

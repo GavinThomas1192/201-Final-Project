@@ -27,7 +27,14 @@ main {
   display: inline-block;
   margin: 30px;
   width: 100px;
+}
 
+#logo a {
+  text-decoration: none;
+}
+
+#logo a:visited {
+  text-decoration: none;
 }
 
 #top-logo {

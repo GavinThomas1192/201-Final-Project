@@ -8,17 +8,21 @@ function render() {
   for (var i = 0; i < storedJournalEntry.length; i++) {
     var div = document.createElement('div');
     div.id = storedJournalEntry[i].date;
-    var pEl = document.createElement('p');
+    div.className = 'the-divs';
+    var pEl = document.createElement('span');
+    pEl.id = ('activity');
     var p2El = document.createElement('p');
     var p3El = document.createElement('p');
     var p4El = document.createElement('p');
     var p5El = document.createElement('p');
     p5El.id = 'descriptionPara';
-    pEl.textContent = 'Activity: ' + storedJournalEntry[i].whatKind;
-    p2El.textContent = 'Date: ' + storedJournalEntry[i].date;
-    p3El.textContent = 'Location: ' + storedJournalEntry[i].location;
-    p4El.textContent = 'Duration: ' + storedJournalEntry[i].duration;
-    p5El.textContent = 'Description: ' + storedJournalEntry[i].description;
+    // var activity = 'Activity: ';
+    // var activityBold = activity.bold();
+    pEl.textContent = storedJournalEntry[i].whatKind;
+    p2El.innerHTML = '<span class="titles">Date:  </span>' + storedJournalEntry[i].date;
+    p3El.innerHTML = '<span class="titles">Location:  </span>' + storedJournalEntry[i].location;
+    p4El.innerHTML = '<span class="titles">Duration:  </span>' +  storedJournalEntry[i].duration;
+    p5El.innerHTML = '<span class="titles">Description:  </span><br><br>' + storedJournalEntry[i].description;
     div.appendChild(pEl);
     div.appendChild(p2El);
     div.appendChild(p3El);

@@ -3,7 +3,7 @@
 var storedJournalEntry = JSON.parse(localStorage.getItem('journalEntry'));
 
 var section = document.getElementById('render-journal');
-
+//hello
 function render() {
   for (var i = 0; i < storedJournalEntry.length; i++) {
     var div = document.createElement('div');

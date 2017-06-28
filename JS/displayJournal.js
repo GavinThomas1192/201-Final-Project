@@ -35,32 +35,35 @@ function render() {
     button.addEventListener('click', remove);
     button2.addEventListener('click', edit);
     section.appendChild(div);
+    buttonSave.addEventListener('click', save);
   };
 };
+
+var buttonSave = document.createElement('button');
 
 function edit(event) {
   document.preventDefault;
   for (var i = 0; i < storedJournalEntry.length; i++) {
     if (event.target.id === storedJournalEntry[i].date) {
       var div = document.getElementById(storedJournalEntry[i].date);
-      buttonSave = document.createElement('button');
       buttonSave.id = storedJournalEntry[i].date;
       buttonSave.textContent = 'Save Entry';
       div.appendChild(buttonSave);
-      buttonSave.addEventListener('click', save);
       var editBox = document.createElement('textarea');
       editBox.id = 'editBox';
       div.appendChild(editBox);
-
-      function save(event) {
-        var editPara = document.getElementById('descriptionPara');
-        editPara.innerText = editBox.value;
-        storedJournalEntry[i].description = editBox.value;
-      };
-      localStorage.setItem('journalEntry', JSON.stringify(storedJournalEntry));
-      return;
     }
   }
+};
+
+function save(event) {
+  for (var i = 0; i < storedJournalEntry.length; i++) {
+    var editPara = document.getElementById('descriptionPara');
+    editPara.innerText = editBox.value;
+    storedJournalEntry[i].description = editBox.value;
+  };
+  localStorage.setItem('journalEntry', JSON.stringify(storedJournalEntry));
+  return;
 };
 
 

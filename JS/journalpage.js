@@ -48,9 +48,6 @@ function handleTurnInJournal(e) {
     return alert('Fields cannot be empty!');
   }
 
-  // if (!event.target.date.value || !event.target.whatKind.value || !event.target.location.value || !event.target.duration.value || !document.getElementById('desc').value) {
-  //   return alert('Fields cannot be empty!');
-  // }
 
   new JournalEntry(whatKind, date, location, duration, description);
 

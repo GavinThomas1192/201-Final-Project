@@ -38,6 +38,14 @@ main {
 
 }
 
+#logo a {
+  text-decoration: none;
+}
+
+#logo a:visited {
+  text-decoration: none;
+}
+
 #top-logo {
   font-family: 'Archivo Black', Helvetica, Arial, sans-serif;
   font-size: 3em;

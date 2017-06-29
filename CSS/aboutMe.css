@@ -81,7 +81,7 @@ ul.img-list {
 ul.img-list li {
   display: inline-block;
   height: 250px;
-  margin: 0 2em 2em 0;
+  margin: 0 3em 2em 3em;
   position: relative;
   width: 250px;
 }
@@ -100,8 +100,9 @@ span.text-content {
 
 span.text-content span {
   display: table-cell;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
+  padding: 5px;
 }
 
 span.text-content {
@@ -122,7 +123,7 @@ ul.img-list li:hover span.text-content {
 }
 
 span.text-content {
-   font: 600 18px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+   font: 600 16px/20px "Helvetica", Sans-Serif;
   background: rgba(0,0,0,0.5);
   color: white;
   cursor: pointer;
@@ -138,3 +139,6 @@ span.text-content {
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
 }
+ img {
+   border: 2px solid black;
+ }

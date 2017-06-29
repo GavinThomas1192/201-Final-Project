@@ -111,9 +111,9 @@ span.text-content {
   cursor: pointer;
   display: table;
   height: 250px;
-  left: 0;
+  left: 2px;
   position: absolute;
-  top: 0;
+  top: 2px;
   width: 250px;
   opacity: 0;
 }
@@ -129,9 +129,9 @@ span.text-content {
   cursor: pointer;
   display: table;
   height: 250px;
-  left: 0;
+  left: 2px;
   position: absolute;
-  top: 0;
+  top: 2px;
   width: 250px;
   opacity: 0;
   -webkit-transition: opacity 500ms;

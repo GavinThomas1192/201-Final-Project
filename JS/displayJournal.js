@@ -16,8 +16,6 @@ function render() {
     var p4El = document.createElement('p');
     var p5El = document.createElement('p');
     p5El.id = storedJournalEntry[i].whatKind;
-    // var activity = 'Activity: ';
-    // var activityBold = activity.bold();
     pEl.textContent = storedJournalEntry[i].whatKind;
     p2El.innerHTML = '<span class="titles">Date:  </span>' + storedJournalEntry[i].date;
     p3El.innerHTML = '<span class="titles">Location:  </span>' + storedJournalEntry[i].location;

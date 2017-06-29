@@ -15,13 +15,13 @@ function render() {
     var p3El = document.createElement('p');
     var p4El = document.createElement('p');
     var p5El = document.createElement('p');
-    p5El.id = 'descriptionPara';
+    p5El.id = storedJournalEntry[i].whatKind;
     // var activity = 'Activity: ';
     // var activityBold = activity.bold();
     pEl.textContent = storedJournalEntry[i].whatKind;
     p2El.innerHTML = '<span class="titles">Date:  </span>' + storedJournalEntry[i].date;
     p3El.innerHTML = '<span class="titles">Location:  </span>' + storedJournalEntry[i].location;
-    p4El.innerHTML = '<span class="titles">Duration:  </span>' +  storedJournalEntry[i].duration;
+    p4El.innerHTML = '<span class="titles">Duration:  </span>' + storedJournalEntry[i].duration;
     p5El.innerHTML = '<span class="titles">Description:  </span><br><br>' + storedJournalEntry[i].description;
     div.appendChild(pEl);
     div.appendChild(p2El);
@@ -55,6 +55,7 @@ function edit(event) {
       div.appendChild(buttonSave);
       var editBox = document.createElement('textarea');
       editBox.id = 'editBox';
+      editBox.textContent = storedJournalEntry[i].description;
       div.appendChild(editBox);
     }
   }
@@ -62,9 +63,13 @@ function edit(event) {
 
 function save(event) {
   for (var i = 0; i < storedJournalEntry.length; i++) {
-    var editPara = document.getElementById('descriptionPara');
-    editPara.innerText = editBox.value;
-    storedJournalEntry[i].description = editBox.value;
+    if (event.target.id === storedJournalEntry[i].date) {
+      var editPara = document.getElementById(storedJournalEntry[i].whatKind);
+      editPara.innerText = editBox.value;
+      storedJournalEntry[i].description = editBox.value;
+      buttonSave.parentElement.removeChild(buttonSave);
+      editBox.parentElement.removeChild(editBox);
+    }
   };
   localStorage.setItem('journalEntry', JSON.stringify(storedJournalEntry));
   return;

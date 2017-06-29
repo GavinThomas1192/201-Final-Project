@@ -171,3 +171,8 @@ button a:visited {
   text-decoration: none;
   decoration: none;
 }
+
+#editBox {
+width: 600px;
+height: 100px;
+})

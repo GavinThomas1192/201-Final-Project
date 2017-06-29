@@ -48,10 +48,6 @@ function handleTurnInJournal(e) {
     return alert('Fields cannot be empty!');
   }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> f3a485ba94f5f585ffa1a2bd72929d61d01169cf
   new JournalEntry(whatKind, date, location, duration, description);
 
   localStorage.setItem('journalEntry', JSON.stringify(allJournalEntry));

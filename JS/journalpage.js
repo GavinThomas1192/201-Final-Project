@@ -31,6 +31,7 @@ function JournalEntry(whatKind, date, location, duration, description) {
   this.description = description;
   allJournalEntry.push(this);
 };
+//hello
 
 journalEntryContainer.addEventListener('submit', handleTurnInJournal);
 

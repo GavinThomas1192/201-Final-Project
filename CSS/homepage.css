@@ -10,8 +10,19 @@ header {
   background-color: rgba(35, 50, 55, .6);
 }
 
+#slideshow, img.bgM {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:-9999;
+}
+
 body {
-  background-image: url("../images/exercise-main.jpg");
+  /*background-image: url("../images/exercise-main.jpg");*/
   background-size: cover;
   background-position: fixed;
   background-repeat: no-repeat;

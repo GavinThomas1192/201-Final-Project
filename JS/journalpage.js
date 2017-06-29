@@ -44,13 +44,10 @@ function handleTurnInJournal(e) {
   var duration = event.target.duration.value;
   var description = quill.root.innerText;
 
-  if (!event.target.date.value || !event.target.whatKind.value || !event.target.location.value || !event.target.duration.value) {
+  if (event.target.whatKind.value === '' || event.target.location.value === '' || event.target.duration.value === '') {
     return alert('Fields cannot be empty!');
   }
 
-  // if (!event.target.date.value || !event.target.whatKind.value || !event.target.location.value || !event.target.duration.value || !document.getElementById('desc').value) {
-  //   return alert('Fields cannot be empty!');
-  // }
 
   new JournalEntry(whatKind, date, location, duration, description);
 
@@ -62,8 +59,5 @@ function handleTurnInJournal(e) {
   event.target.duration.value = null;
   oFormObject.elements['date'].value = dateTime;
 
-};
-
-document.getElementById("redirectButton").onclick = function() {
-  location.href = "displayJournal.html";
+  document.location.href = 'displayJournal.html';
 };

@@ -11,9 +11,9 @@ var getTheGoods = JSON.parse(localStorage.getItem('login'));
   if (getTheGoods[0].dropdownselect === 'exercise') {
     document.body.style.backgroundImage = "url('images/exercise-two.jpg')";
   } else if (getTheGoods[0].dropdownselect === 'social') {
-    document.body.style.backgroundImage = "url('images/social-main.jpg')";
+    document.body.style.backgroundImage = "url('images/social-two.jpg')";
   } else if (getTheGoods[0].dropdownselect === 'Gaming') {
-    document.body.style.backgroundImage = "url('images/gaming-main.jpg')";
+    document.body.style.backgroundImage = "url('images/gaming-two.jpg')";
   }
 })();
 

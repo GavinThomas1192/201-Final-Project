@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 
-/*
-Colors:
-#f5b42b
-*/
-
-header {
-  width: 100%;
-  background-color: rgba(35, 50, 55, .6);
-}
-
 #slideshow, img.bgM {
   min-height: 100%;
   min-width: 1024px;
@@ -28,10 +18,19 @@ body {
   background-repeat: no-repeat;
 }
 
+header {
+  width: 100%;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, red, orange , yellow, green, blue, violet); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, red, orange, yellow, green, blue, violet); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, red, orange, yellow, green, blue, violet); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, red, orange , yellow, green, blue, violet); /* Standard syntax (must be last) */
+}
+
 main {
   width: 960px;
   margin: 0 auto;
-  background: rgba(35, 50, 55, .6);
+  margin-top: 50px;
 }
 
 #logo {
@@ -52,11 +51,9 @@ main {
   font-family: 'Archivo Black', Helvetica, Arial, sans-serif;
   font-size: 3em;
   padding: 0px 17px 0px 17px;
-  color: #f5b42b;
+  color: rgba(00, 00, 00, .7);
   border-radius: 50%;
-  border: 10px solid #f5b42b;
-  /*line-height: .5em;*/
-
+  border: 10px solid rgba(00, 00, 00, .7);
 }
 
 nav {
@@ -73,71 +70,71 @@ nav ul li {
   margin: 15px;
 }
 
-#welcome {
-  margin-top: 6.250em;
-  /*background: rgba(35, 50, 55, .6);*/
-  font-family: 'Archivo Black', sans-serif;
-  color: #f5b42b;
+
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-.welcome1 {
-  font-size: 12em;
+ul.img-list li {
+  display: inline-block;
+  height: 250px;
+  margin: 0 2em 2em 0;
   position: relative;
+  width: 250px;
 }
 
-#subwelcome {
-  font-size: 1.5em;
-  letter-spacing: .1em;
-  margin: 0em 0em 0em 10.625em;
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 250px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 250px;
 }
 
-select {
-  width: 150px;
-  /*padding: 12px 20px;
-  margin: 8px 0;*/
-  border: 0px;
-  box-sizing: border-box;
+span.text-content span {
+  display: table-cell;
   text-align: center;
+  vertical-align: middle;
 }
 
-input[type=text] {
-  width: 150px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  text-align: center;
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 250px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 250px;
+  opacity: 0;
 }
 
-button {
-  background-color: #f5b42b;
-  font-size: 18px;
-  border: none;
-  color: #233237;
-  padding: 10px 40px;
-  text-decoration: none;
-  margin: 4px 2px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+ul.img-list li:hover span.text-content {
+  opacity: 1;
 }
 
-button:hover {
-  background-color: #233237;
-
-  color: #f5b42b;
-
-
-}
-
-#login {
-  text-align: center;
-  margin-top: 3.1em;
-}
-
-#password {
-  padding: 0px 0px 0px 30px;
-}
-
-#dropdown {
-  margin-left: 30px;
+span.text-content {
+   font: 600 18px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 250px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 250px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
 }

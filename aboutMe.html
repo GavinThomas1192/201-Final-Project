@@ -1,73 +1,65 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <link rel="stylesheet" href="CSS/reset.css">
-  <link rel="stylesheet" href="CSS/homepage.css">
-  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Istok+Web:400,400i,700,700i" rel="stylesheet">
-  <meta charset="utf-8">
-  <title>verve. </title>
-</head>
+  <head>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/aboutMe.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Istok+Web:400,400i,700,700i" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>verve. </title>
+  </head>
 
-<body>
-  <div id="slideshow">
-    <img src="aboutmeimg/img2.png" class="bgM"/>
-    <img src="aboutmeimg/img1.png" class="bgM"/>
-    <img src="aboutmeimg/img3.png" class="bgM"/>
-    <img src="aboutmeimg/img4.png" class="bgM"/>
-    <img src="aboutmeimg/img5.JPG" class="bgM"/>
-    <img src="aboutmeimg/img6.JPG" class="bgM"/>
-  </div>
-  <div id="wrap">
-    <header>
-      <div id="logo">
-        <a href="index.html"><span id="top-logo">V</span></a>
-      </div>
-      <!-- <nav id="nav">
-      <ul>
-      <li>Home</li>
-      <li>About Us</li>
-    </ul>
-  </nav> -->
-</header>
-<main>
-  <!-- <div id="welcome">
-    <h1 class="welcome1">verve</h1>
-    <h2 class="welcome" id="subwelcome">a journal for your life</h2>
-  </div> -->
-  <section>
-    <!-- <form id="login">
-      <fieldset>
-        <label for="username"></label>
-        <input name="username" type="text" placeholder="Username" />
-        <label id="password" for="password"></label>
-        <input name="password" type="text" placeholder="Password" />
-        <select id="dropdown">
-          <option value="blank">Select an activity</option>
-          <option value="exercise">Exercise</option>
-          <option value="social">Social</option>
-          <option value"gaming">Gaming</option>
-        </select>
-        <div class="row">
-          <button id="submitButton" type="submit">Login</button>
+  <body>
+    <div id="slideshow">
+      <img src="aboutmeimg/img2.png" class="bgM"/>
+      <img src="aboutmeimg/img1.png" class="bgM"/>
+      <img src="aboutmeimg/img3.png" class="bgM"/>
+      <img src="aboutmeimg/img4.png" class="bgM"/>
+      <img src="aboutmeimg/img5.JPG" class="bgM"/>
+      <img src="aboutmeimg/img6.JPG" class="bgM"/>
+    </div>
+    <div id="wrap">
+
+      <header>
+        <div id="logo">
+          <a href="index.html"><span id="top-logo">V</span></a>
         </div>
-      </fieldset>
-    </form> -->
-    <section>
-    </main>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
-    <script src="JS/aboutMe.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('#slideshow').cycle({
-          fx: 'fade',
-          pager: '#smallnav',
-          pause:   1,
-          speed: 1800,
-          timeout:  3500
+      </header>
+
+      <main>
+        <ul class="img-list">
+          <li>
+            <a href="#"><img id="aaron" src="aboutmeimg/aaron.svg" width="250" height="250" />
+            <span class="text-content"><span>2 Chainz - B.O.A.T.S. II: Me Time</span></span></a>
+          </li>
+          <li>
+            <a href="#"><img id="gavin" src="aboutmeimg/gavin.svg" width="250" height="250" />
+            <span class="text-content"><span>2 Chainz - B.O.A.T.S. II: Me Time</span></span></a>
+          </li>
+          <br><li>
+            <a href="#"><img id="ian" src="aboutmeimg/ian.svg" width="250" height="250" />
+            <span class="text-content"><span>2 Chainz - B.O.A.T.S. II: Me Time</span></span></a>
+          </li>
+          <li>
+            <a href="#"><img id="katherine" src="aboutmeimg/katherine.svg" width="250" height="250" />
+            <span class="text-content"><span>2 Chainz - B.O.A.T.S. II: Me Time</span></span></a>
+          </li>
+        </ul>
+      </main>
+
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+      <script src="JS/aboutMe.js"></script>
+      <script>
+        $(document).ready(function() {
+          $('#slideshow').cycle({
+            fx: 'fade',
+            pager: '#smallnav',
+            pause:   1,
+            speed: 1800,
+            timeout:  3500
+          });
         });
-      });
-    </script>
-  </div>
-</body>
+      </script>
+    </div>
+  </body>
 </html>

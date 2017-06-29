@@ -10,43 +10,66 @@
 </head>
 
 <body>
-  <header>
-    <div id="logo">
-      <a href="index.html"><span id="top-logo">V</span></a>
-    </div>
-    <!-- <nav id="nav">
-      <ul>
-        <li>Home</li>
-        <li>About Us</li>
-      </ul>
-    </nav> -->
-  </header>
-  <main>
-    <div id="welcome">
-      <h1 class="welcome1">verve</h1>
-      <h2 class="welcome" id="subwelcome">a journal for your life</h2>
-    </div>
-    <section>
-      <form id="login">
-        <fieldset>
-          <label for="username"></label>
-          <input name="username" type="text" placeholder="Username" />
-          <label id="password" for="password"></label>
-          <input name="password" type="text" placeholder="Password" />
-          <select id="dropdown">
-            <option value="blank">Select an activity</option>
-            <option value="exercise">Exercise</option>
-            <option value="social">Social</option>
-            <option value"gaming">Gaming</option>
-          </select>
-          <div class="row">
-            <button id="submitButton" type="submit">Login</button>
-          </div>
-        </fieldset>
-      </form>
+  <div id="slideshow">
+  <img src="images/exercise-main.jpg" class="bgM"/>
+  <img src="images/social-main.jpg" class="bgM"/>
+  <img src="images/gaming-main.jpg" class="bgM"/>
+  <!-- <img src="/images/b4.jpg" class="bgM"/>
+  <img src="/images/b5.jpg" class="bgM"/>
+  <img src="/images/b6.jpg" class="bgM"/>
+  <img src="/images/b7.jpg" class="bgM"/> -->
+  </div>
+  <div id="wrap">
+    <header>
+      <div id="logo">
+        <a href="index.html"><span id="top-logo">V</span></a>
+      </div>
+      <!-- <nav id="nav">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+        </ul>
+      </nav> -->
+    </header>
+    <main>
+      <div id="welcome">
+        <h1 class="welcome1">verve</h1>
+        <h2 class="welcome" id="subwelcome">a journal for your life</h2>
+      </div>
       <section>
-  </main>
-  <script src="JS/homepage.js"></script>
+        <form id="login">
+          <fieldset>
+            <label for="username"></label>
+            <input name="username" type="text" placeholder="Username" />
+            <label id="password" for="password"></label>
+            <input name="password" type="text" placeholder="Password" />
+            <select id="dropdown">
+              <option value="blank">Select an activity</option>
+              <option value="exercise">Exercise</option>
+              <option value="social">Social</option>
+              <option value"gaming">Gaming</option>
+            </select>
+            <div class="row">
+              <button id="submitButton" type="submit">Login</button>
+            </div>
+          </fieldset>
+        </form>
+        <section>
+    </main>
+    <script src="JS/homepage.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+    <script type="text/javascript" src="JS/cycle.js"></script>
+    <script>
+    $(document).ready(function() {
+    	$('#slideshow').cycle({
+    	fx: 'fade',
+    	pager: '#smallnav',
+    	pause:   1,
+    	speed: 1800,
+    	timeout:  3500
+    	});
+    });
+    </script>
+  </div>
 </body>
-
 </html>

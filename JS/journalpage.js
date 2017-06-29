@@ -48,7 +48,6 @@ function handleTurnInJournal(e) {
     return alert('Fields cannot be empty!');
   }
 
-
   new JournalEntry(whatKind, date, location, duration, description);
 
   localStorage.setItem('journalEntry', JSON.stringify(allJournalEntry));
@@ -60,4 +59,4 @@ function handleTurnInJournal(e) {
   oFormObject.elements['date'].value = dateTime;
 
   document.location.href = 'displayJournal.html';
-};
+}

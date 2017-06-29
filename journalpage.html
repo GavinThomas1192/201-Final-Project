@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="CSS/reset.css">
   <link rel="stylesheet" href="CSS/journalpage.css">
   <link href="https://cdn.quilljs.com/1.2.6/quill.snow.css" rel="stylesheet">
@@ -13,14 +14,9 @@
 <body>
   <header>
     <div id="logo">
-      <span id="top-logo">V</span>
+      <a href="index.html"><span id="top-logo">V</span></a>
     </div>
-    <!-- <nav id="nav">
-    <ul>
-    <li>Home</li>
-    <li>About Us</li>
-  </ul>
-</nav> -->
+
   </header>
 
   <main>
@@ -39,20 +35,17 @@
         <input name="duration" type="text" placeholder="Ex. 1.5 Hours" />
         <br>
         <div id="editor">
-          <p>Hello World!</p>
-          <p>Some initial <strong>bold</strong> text</p>
-          <p><br></p>
         </div>
-
-        <br><a href="displayJournal.html"><button type="submit" id="redirectButton" >Log Journal Entry</button></a>
+        <div class="buttonclass">
+          <br><a href="displayJournal.html"><button type="submit" id="redirectButton" >Log Journal Entry</button></a>
+        </div>
 
 
       </fieldset>
-      <div class="buttonclass">
 
-        <!-- <button type="submit" id="redirectButton">Go to Journal Entries</button> -->
 
-      </div>
+      <!-- <button type="submit" id="redirectButton">Go to Journal Entries</button> -->
+
     </form>
   </main>
   <script src="https://cdn.quilljs.com/1.2.6/quill.js"></script>

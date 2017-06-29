@@ -11,9 +11,9 @@ var getTheGoods = JSON.parse(localStorage.getItem('login'));
   if (getTheGoods[0].dropdownselect === 'exercise') {
     document.body.style.backgroundImage = "url('images/exercise-two.jpg')";
   } else if (getTheGoods[0].dropdownselect === 'social') {
-    document.body.style.backgroundImage = "url('images/social-main.jpg')";
+    document.body.style.backgroundImage = "url('images/social-two.jpg')";
   } else if (getTheGoods[0].dropdownselect === 'Gaming') {
-    document.body.style.backgroundImage = "url('images/gaming-main.jpg')";
+    document.body.style.backgroundImage = "url('images/gaming-two.jpg')";
   }
 })();
 
@@ -44,11 +44,14 @@ function handleTurnInJournal(e) {
   var duration = event.target.duration.value;
   var description = quill.root.innerText;
 
-  if (!event.target.date.value || !event.target.whatKind.value || !event.target.location.value || !event.target.duration.value) {
+  if (event.target.whatKind.value === '' || event.target.location.value === '' || event.target.duration.value === '') {
     return alert('Fields cannot be empty!');
   }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f3a485ba94f5f585ffa1a2bd72929d61d01169cf
   new JournalEntry(whatKind, date, location, duration, description);
 
   localStorage.setItem('journalEntry', JSON.stringify(allJournalEntry));
@@ -59,8 +62,5 @@ function handleTurnInJournal(e) {
   event.target.duration.value = null;
   oFormObject.elements['date'].value = dateTime;
 
-};
-
-document.getElementById("redirectButton").onclick = function() {
-  location.href = "displayJournal.html";
-};
+  document.location.href = 'displayJournal.html';
+}

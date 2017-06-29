@@ -4,8 +4,7 @@
 Colors:
 #f5b42b
 */
-* {
-}
+
 
 fieldset{
 }
@@ -91,7 +90,7 @@ button {
   /*margin: 4px 2px;*/
   /*margin-top: 30px;
   margin-bottom: 30px;*/
-  margin: 30px 15px 30px 15px;
+  margin: 20px 15px 30px 15px;
 }
 
 #redirectButton {
@@ -101,9 +100,9 @@ button {
 .buttonclass {
   display: inline-block;
   margin: 0 auto;
-  width: 80%;
+  /*width: 80%;*/
   position: relative;
-  left: 23%;
+  left: 58.5%;
   /*margin-left: 5%;*/
 }
 
@@ -140,10 +139,4 @@ button:hover {
   display: inline-block;
   font-family: 'Archivo Black', Helvetica, Arial, sans-serif;
   margin: 15px 0px 15px 200px;
-
 }
-
-/*.journalinput {
-  width: 200px;
-  /*background: black;*/
-}*/

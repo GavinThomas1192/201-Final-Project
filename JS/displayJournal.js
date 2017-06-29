@@ -81,6 +81,7 @@ function remove(event) {
       var deleteDiv = document.getElementById(event.target.id);
       deleteDiv.innerHTML = '';
       storedJournalEntry.splice(i, 1);
+      document.location.href = 'displayJournal.html';
       localStorage.setItem('journalEntry', JSON.stringify(storedJournalEntry));
       return;
     }

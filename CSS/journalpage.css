@@ -58,17 +58,45 @@ main {
 }
 
 nav {
+  float: right;
   display: inline-block;
 }
 
 nav ul {
   position: relative;
-  bottom: 1.8em;
+  top: 1.8em;
+  bottom: .6em;
 }
 
 nav ul li {
   display: inline-block;
   margin: 15px;
+  font-family: 'Archivo Black', Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  padding: 0px 17px 0px 17px;
+  color: #f5b42b;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  text-decoration: none;
+  color: #f5b42b;
+}
+
+nav ul li:hover {
+  text-decoration: none;
+  color: #233237;
+}
+
+#about-us {
+  transition-duration: 0.350s;
+}
+
+#about-us:hover {
+  color: #233237;
 }
 
 select {
@@ -95,10 +123,8 @@ button {
   color: #233237;
   padding: 10px 40px;
   text-decoration: none;
-  /*margin: 4px 2px;*/
-  /*margin-top: 30px;
-  margin-bottom: 30px;*/
   margin: 20px 15px 30px 15px;
+  transition-duration: 0.350s;
 }
 
 #redirectButton {
@@ -108,10 +134,8 @@ button {
 .buttonclass {
   display: inline-block;
   margin: 0 auto;
-  /*width: 80%;*/
   position: relative;
-  left: 58.5%;
-  /*margin-left: 5%;*/
+  left: 57.9%;
 }
 
 button:hover {

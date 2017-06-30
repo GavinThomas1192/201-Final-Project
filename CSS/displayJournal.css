@@ -45,28 +45,48 @@ main {
   color: #f5b42b;
   border-radius: 50%;
   border: 10px solid #f5b42b;
-  /*line-height: .5em;*/
-
 }
 
 nav {
+  float: right;
   display: inline-block;
 }
 
 nav ul {
   position: relative;
-  bottom: 1.8em;
+  top: 1.8em;
+  bottom: .6em;
 }
 
 nav ul li {
   display: inline-block;
   margin: 15px;
+  font-family: 'Archivo Black', Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  padding: 0px 17px 0px 17px;
+  color: #f5b42b;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  text-decoration: none;
+  color: #f5b42b;
+}
+
+#about-us {
+  transition-duration: 0.350s;
+}
+
+#about-us:hover {
+  color: #233237;
 }
 
 #welcome {
   margin-top: 6.250em;
   color: #f7f1f1;
-  /*background: rgba(35, 50, 55, .6);*/
   font-family: Helvetica, sans-serif;
   text-align: center;
 }
@@ -83,51 +103,50 @@ nav ul li {
 }
 
 select {
-    width: 150px;
-    /*padding: 12px 20px;
-    margin: 8px 0;*/
-    border: 0px;
-    box-sizing: border-box;
-    text-align: center;
+  width: 150px;
+  border: 0px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 input[type=text] {
-    width: 150px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    text-align: center;
+  width: 150px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 button {
-    background-color: #f5b42b;
-    font-size: 18px;
-    border: none;
-    color: #233237;
-    padding: 10px 40px;
-    text-decoration: none;
-    margin: 4px 2px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
+  background-color: #f5b42b;
+  font-size: 18px;
+  border: none;
+  color: #233237;
+  padding: 10px 40px;
+  text-decoration: none;
+  margin: 4px 2px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition-duration: 0.350s;
+}
 
 button:hover {
   background-color: #233237;
   color: #f5b42b;
 }
 
-    #login {
-      text-align: center;
-      margin-top: 3.1em;
-    }
+#login {
+  text-align: center;
+  margin-top: 3.1em;
+}
 
-    #password {
-      padding: 0px 0px 0px 30px;
-    }
+#password {
+  padding: 0px 0px 0px 30px;
+}
 
-    #dropdown {
-      margin-left: 30px;
-    }
+#dropdown {
+  margin-left: 30px;
+}
 
 section > div {
   padding: 30px;
@@ -173,6 +192,6 @@ button a:visited {
 }
 
 #editBox {
-width: 600px;
-height: 100px;
-})
+  width: 600px;
+  height: 100px;
+}
